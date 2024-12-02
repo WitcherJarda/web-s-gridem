@@ -1,0 +1,151 @@
+@media only screen and (max-width: 1770px){
+
+    nav ul li {
+        display: block;
+    }
+    .nav-background {
+/*        display: none;*/
+    }
+    .mobile-nav-back {
+        height: 200px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-bottom: 2px solid #fff;
+        display: none;
+        z-index: 100;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    }
+
+    nav ul {
+        display: none;
+        z-index: 200;
+    }
+}
+
+@media only screen and (max-width: 1170px){
+    /***** Photo gallery *****/
+    .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;}
+
+    /***** Reference *****/
+    .col.span-1-of-3.one-reference {
+        width: 49%;
+        margin-left: 1.8%;
+        }
+
+    .one-reference:nth-child(3) {
+            display: none;
+        }
+    .hamburger-info img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    /***** About us *****/
+    .burger-example img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .burger-example .span-1-of-2 {
+        width: 48.3%;
+    }
+    }
+
+    
+@media only screen and (max-width: 920px){
+    /***** Uvodni text - header *****/
+    .header-text {
+        width: 100%;
+        left: 0;
+        transform: translate(0%,0%);
+    }
+    .header-text h1 {
+        text-align: center;
+        
+    }
+    /***** tlačítka - header *****/
+    .btn {
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .btn-empty:link,
+    .btn-empty:visited {
+        margin-left: 10px;
+}
+}   
+
+
+
+
+
+@media only screen and (max-width: 810px){
+    /***** Our hamburger *****/
+    .hamburger-info .span-1-of-2 {
+        width: 96%;
+    }
+
+    .hamburger-info img { 
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .text-burger p {
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    /***** Photo gallery *****/
+    .photo-segment .col {
+        margin-left: 0;
+    }
+    
+    .photo-segment li {
+        width: 100%;
+    }
+    /***** About us *****/
+    .burger-example .span-1-of-2 {
+        width: 96%;
+    }
+
+    .burger-example .col {
+        margin-left: 0;
+    }
+
+    .burger-example img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    /***** Photo gallery *****/
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hamburger-info {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+       transition: border-bottom 0,5s;
+       border-bottom: 2px solid transparent;
+}}
+
+
+    

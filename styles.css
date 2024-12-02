@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***** resusable ******/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.heading-main h2 {
+    text-align: center;
+    /*margin-top: 20px;*/
+    font-size: 20px;
+}
+
+.heading-main h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #e57b35;
+    margin: 20px auto;
+}
+.empty-space {
+    height: 50px;
+}
+/***** header *****/
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/burger.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-background {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 50;
+    border-bottom: 2px solid #fff;
+}
+
+#logo img {
+    width: 250px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.jq--image-hamburger[src="images/menu-cross.png"] {
+    width: 40px;  /* Změna velikosti křížku */
+    height: auto; /* Zachování proporcí */
+}
+
+nav ul {
+    float: right;
+    margin-top: 7px;
+    position: fixed;
+    margin-left: 30%;
+    z-index: 100;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+ }
+
+ nav ul li a:hover,
+ nav ul li a:active {
+    transition: border-bottom 0,5s;
+    border-bottom: 2px solid #e57b35;
+ }
+ 
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 3.5px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #e57b35;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background:#df7026 ;
+}
+
+
+.btn-full:hover,
+.btn-full:active {
+    transition: background 0.5s;
+    background: #e57b35;
+    border: 1px solid #e57b35
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    margin-left: 5px;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    transition: background 0.5s;
+    background: #e57b35;
+    border: 1px solid #e57b35
+}
+/* Mobile navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 2px;
+    display: none;
+}
+
+/***** About us *****/
+.burger-example img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px #000;
+
+}
+
+/***** Our hamburger *****/
+.hamburger-info img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px #000;
+
+}
+
+.text-burger {
+    margin-bottom: 20px;
+}
+
+.text-burger div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    float: left;
+}
+ .text-burger p {
+    margin-left: 60px;
+    font-size: 15px;
+ }
+
+ /***** Reference *****/
+ .reference {
+    background: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)), url(images/burger.jpg);
+    background-attachment: fixed;
+
+ }
+
+.reference h2 {
+    color: #fff;
+    padding-top: 15px;
+}
+
+.reference h2:after {
+    border-bottom: 2px solid #fff;
+}
+
+.one-reference {
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p {
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.photo-name p {
+    padding:  13px;
+    margin-left: 60px;
+    font-style: normal;
+}
+
+.photo-name img {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+/***** Photo gallery *****/
+.photo-segment li {
+    list-style-type: none;
+    background-color: #000;
+    overflow: hidden;
+}
+.photo-segment img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transform: scale(1.15);
+}
+ .photo-segment img:hover {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    opacity: 1;
+ }
+
+ /***** Contact form *****/
+ .contact-form {
+    max-width: 700px;
+    text-align: center;
+ }
+
+ .contact-form input {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+ }
+
+ .contact-form textarea {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ input[type="submit"] {
+    background-color: #df7026;
+    color: #fff;
+    font-size: 20px;
+ }
+
+ input[type="submit"]:hover {
+    background-color: #e57b35;
+    color: #000;
+    transition: background-color 0.5s;
+ }
+
+/***** Footer *****/
+.footer-page {
+    background-color: #df7026;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social p {
+    display: inline;
+    margin-right: 20px;
+}
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: #000;
+    transition: color 0.5s ;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+
+/***** Stop floating *****/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
